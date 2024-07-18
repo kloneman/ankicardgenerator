@@ -5,10 +5,12 @@ import fs from 'fs'
 import path from 'path'
 import axios from 'axios'
 import jsdom from 'jsdom';
+import os from 'os'
 
 const app = express();
 const port = 3000;
-const targetDir = '%USERPROFILE%/Documents/ShareX/Screenshots';
+const homedir = os.homedir()
+const targetDir = homedir + '/Documents/ShareX/Screenshots';
 
 clipboardListener.startListening();
 clipboardListener.on('change', () => {

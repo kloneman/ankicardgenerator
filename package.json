@@ -10,11 +10,12 @@
   "description": "",
   "dependencies": {
     "axios": "^1.7.2",
+    "clipboard-event": "^1.6.0",
     "clipboardy": "^4.0.0",
     "express": "^4.19.2",
     "jquery": "^3.7.1",
     "jsdom": "^24.1.0",
-    "clipboard-event": "^1.6.0"
+    "os": "^0.1.2"
   },
   "type": "module"
 }
